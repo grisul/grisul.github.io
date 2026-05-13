@@ -1,1 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRISUL — Grupo de Relações Internacionais e Sul Global</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo">
+        <svg class="logo-svg" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Mapa invertido estilizado da América Latina como linhas orgânicas -->
+          <path d="M12 8 C14 6, 18 7, 20 9 C22 11, 21 14, 19 16 C18 17, 16 17, 15 19 C13 22, 14 26, 13 29 C12 32, 10 34, 11 37 C12 40, 15 42, 14 45 C13 48, 11 50, 12 52" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M20 9 C23 8, 27 8, 30 10 C33 12, 34 15, 32 18 C30 20, 27 20, 25 22 C23 24, 22 27, 23 30 C24 33, 27 35, 26 38 C25 40, 22 41, 21 43" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M30 10 C34 9, 38 11, 40 14 C42 17, 41 21, 38 23 C36 24, 33 24, 32 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M38 23 C40 25, 43 26, 44 29 C45 32, 43 35, 41 37 C39 39, 36 39, 34 41 C32 43, 32 46, 30 48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <!-- laços de conexão -->
+          <circle cx="18" cy="16" r="1.5" fill="currentColor" opacity="0.6"/>
+          <circle cx="26" cy="22" r="1.5" fill="currentColor" opacity="0.6"/>
+          <circle cx="35" cy="30" r="1.5" fill="currentColor" opacity="0.6"/>
+          <circle cx="13" cy="37" r="1.5" fill="currentColor" opacity="0.6"/>
+        </svg>
+        <span class="nav-name">GRISUL</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#linhas">Linhas de Pesquisa</a></li>
+        <li><a href="#membros">Membros</a></li>
+        <li><a href="#publicacoes">Publicações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">UNIRIO · Escola de Ciência Política · desde 2014</div>
+      <h1 class="hero-title">
+        GRUPO DE<br>
+        <span class="hero-accent">RELAÇÕES<br>INTERNACIONAIS</span><br>
+        E SUL GLOBAL
+      </h1>
+      <p class="hero-sub">Pesquisa crítica sobre política global, cooperação internacional e a perspectiva do Sul Global — desde a UNIRIO para o mundo.</p>
+      <div class="hero-ctas">
+        <a href="#sobre" class="btn btn-primary">Conheça o grupo</a>
+        <a href="#linhas" class="btn btn-outline">Linhas de pesquisa</a>
+      </div>
+    </div>
+    <div class="hero-map">
+      <svg viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-map-svg">
+        <!-- América Latina invertida estilizada, contorno orgânico -->
+        <path d="M80 20 C90 15, 110 18, 125 25 C140 32, 145 48, 138 60 C131 72, 115 74, 108 86 C100 98, 102 115, 95 128 C88 141, 74 148, 72 162 C70 176, 80 190, 75 204 C70 218, 55 226, 58 242 C61 258, 78 268, 74 284 C70 300, 52 310, 55 326 C58 342, 74 352, 70 368 C66 382, 50 388, 52 398" stroke="#1B512D" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+        <path d="M125 25 C140 20, 160 22, 172 32 C184 42, 182 60, 172 70 C162 80, 145 80, 138 92 C131 104, 134 120, 128 133 C122 146, 108 152, 105 166 C102 180, 112 194, 108 208 C104 222, 90 230, 88 244" stroke="#1B512D" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+        <path d="M172 32 C186 28, 202 32, 212 44 C222 56, 218 74, 206 82 C194 90, 178 88, 170 100 C162 112, 164 130, 156 142" stroke="#1B512D" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+        <path d="M206 82 C218 90, 228 102, 228 116 C228 130, 218 140, 208 150 C198 160, 184 162, 176 174 C168 186, 168 202, 158 214 C148 226, 132 230, 126 244" stroke="#1B512D" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+        <!-- Nós/laços de conexão -->
+        <circle cx="108" cy="86" r="5" fill="#ED9B40" opacity="0.8"/>
+        <circle cx="170" cy="100" r="5" fill="#B1CC74" opacity="0.8"/>
+        <circle cx="128" cy="133" r="4" fill="#A22C29" opacity="0.8"/>
+        <circle cx="208" cy="150" r="4" fill="#ED9B40" opacity="0.8"/>
+        <circle cx="105" cy="166" r="5" fill="#B1CC74" opacity="0.8"/>
+        <circle cx="158" cy="214" r="4" fill="#1B512D" opacity="0.8"/>
+        <!-- linhas de conexão entre nós -->
+        <line x1="108" y1="86" x2="170" y2="100" stroke="#B1CC74" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+        <line x1="170" y1="100" x2="128" y2="133" stroke="#ED9B40" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+        <line x1="128" y1="133" x2="208" y2="150" stroke="#B1CC74" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+        <line x1="208" y1="150" x2="105" y2="166" stroke="#ED9B40" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+        <line x1="105" y1="166" x2="158" y2="214" stroke="#B1CC74" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section sobre">
+    <div class="container">
+      <div class="section-label">01 — Sobre o Grupo</div>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <h2 class="section-title">Pesquisa crítica a partir do Sul</h2>
+          <p>O GRISUL é um grupo de pesquisa certificado pelo CNPq, criado em 2014 na Escola de Ciência Política da UNIRIO. Nosso trabalho parte de uma perspectiva crítica e situada no Sul Global para compreender as dinâmicas das relações internacionais contemporâneas.</p>
+          <p>Desenvolvemos pesquisas sobre política global, cooperação internacional e política externa com um compromisso epistemológico com vozes e experiências historicamente marginalizadas no campo das Relações Internacionais.</p>
+          <div class="sobre-stats">
+            <div class="stat">
+              <span class="stat-num">+10</span>
+              <span class="stat-label">anos de pesquisa</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">pesquisadores</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">20+</span>
+              <span class="stat-label">estudantes ativos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">instituições parceiras</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-card-wrap">
+          <div class="sobre-card">
+            <div class="sobre-card-label">Instituição</div>
+            <p><strong>Universidade Federal do Estado do Rio de Janeiro</strong><br>Escola de Ciência Política</p>
+            <div class="sobre-card-label" style="margin-top:1.5rem">Líderes do grupo</div>
+            <p>Prof. Dr. André Luiz Coelho Farias de Souza<br>Profa. Dra. Roberta Rodrigues Marques da Silva</p>
+            <div class="sobre-card-label" style="margin-top:1.5rem">Área</div>
+            <p>Ciências Humanas · Ciência Política</p>
+            <div class="sobre-card-label" style="margin-top:1.5rem">CNPq</div>
+            <a href="https://dgp.cnpq.br/dgp/espelhogrupo/2022938988562806" target="_blank" class="cnpq-link">Ver espelho do grupo →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINHAS DE PESQUISA -->
+  <section id="linhas" class="section linhas">
+    <div class="container">
+      <div class="section-label">02 — Linhas de Pesquisa</div>
+      <h2 class="section-title">O que investigamos</h2>
+      <div class="linhas-grid">
+
+        <div class="linha-card" data-cor="verde">
+          <div class="linha-num">01</div>
+          <h3>Cooperação Internacional para o Desenvolvimento e Direitos Humanos</h3>
+          <p>Análise das dinâmicas de cooperação internacional, com ênfase nos marcos normativos de direitos humanos e nos atores do Sul Global.</p>
+        </div>
+
+        <div class="linha-card" data-cor="laranja">
+          <div class="linha-num">02</div>
+          <h3>Relações Internacionais da América Latina</h3>
+          <p>Estudo das relações exteriores dos países latino-americanos, integração regional e inserção internacional a partir de perspectivas críticas e decoloniais.</p>
+        </div>
+
+        <div class="linha-card" data-cor="vermelho">
+          <div class="linha-num">03</div>
+          <h3>Atores e Agendas da Política Externa Brasileira</h3>
+          <p>Investigação sobre a formulação e implementação da política externa do Brasil, seus atores institucionais e domésticos e suas articulações internacionais.</p>
+        </div>
+
+        <div class="linha-card" data-cor="amarelo">
+          <div class="linha-num">04</div>
+          <h3>Migrações, Direitos Humanos e Políticas Migratórias</h3>
+          <p>Pesquisa sobre fluxos migratórios transnacionais, movimentos sociais globais e a construção de redes de solidariedade internacional.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMBROS -->
+  <section id="membros" class="section membros">
+    <div class="container">
+      <div class="section-label">03 — Equipe</div>
+      <h2 class="section-title">Quem faz o GRISUL</h2>
+
+      <div class="membros-bloco">
+        <h3 class="membros-cat">Pesquisadores</h3>
+        <div class="membros-grid">
+          <div class="membro-card">
+            <div class="membro-inicial">A</div>
+            <div class="membro-info">
+              <strong>André Luiz Coelho Farias de Souza</strong>
+              <span>Doutor · Líder do grupo</span>
+            </div>
+          </div>
+          <div class="membro-card">
+            <div class="membro-inicial">R</div>
+            <div class="membro-info">
+              <strong>Roberta Rodrigues Marques da Silva</strong>
+              <span>Doutora · Líder do grupo</span>
+            </div>
+          </div>
+          <div class="membro-card">
+            <div class="membro-inicial">M</div>
+            <div class="membro-info">
+              <strong>María del Carmen Villarreal Villamar</strong>
+              <span>Doutora · Pesquisadora</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="membros-bloco">
+        <h3 class="membros-cat">Estudantes de Doutorado</h3>
+        <div class="membros-grid membros-grid--small">
+          <div class="membro-tag">Beatriz Bandeira de Mello Souza e Silva</div>
+          <div class="membro-tag">Beatriz Carvalho Teixeira de Oliveira</div>
+          <div class="membro-tag">Edson Mendes Nunes Junior</div>
+          <div class="membro-tag">Fernanda Gappo Lacombe</div>
+          <div class="membro-tag">Lucca Fantuzzi Soares</div>
+          <div class="membro-tag">Marcia Miranda Charneski</div>
+          <div class="membro-tag">Mozara de Souza Rodrigues</div>
+          <div class="membro-tag">Rodrigo de Sousa Escano</div>
+          <div class="membro-tag">Vinicius Silva dos Santos</div>
+        </div>
+      </div>
+
+      <div class="membros-bloco">
+        <h3 class="membros-cat">Estudantes de Mestrado</h3>
+        <div class="membros-grid membros-grid--small">
+          <div class="membro-tag">Brena Stephany dos Santos Deodato</div>
+          <div class="membro-tag">Bruno Marcondes Ferreira</div>
+          <div class="membro-tag">Giovana Nunes Caputo de Andrade</div>
+          <div class="membro-tag">Lucas Calabró Berti</div>
+          <div class="membro-tag">Vitor Furtado de Melo</div>
+        </div>
+      </div>
+
+      <div class="membros-bloco">
+        <h3 class="membros-cat">Estudantes de Graduação</h3>
+        <div class="membros-grid membros-grid--small">
+          <div class="membro-tag">Isabela Lima Oliveira</div>
+          <div class="membro-tag">Livia de Queiroz Brito</div>
+          <div class="membro-tag">Silvia Barros de Santana Correa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICAÇÕES -->
+  <section id="publicacoes" class="section publicacoes">
+    <div class="container">
+      <div class="section-label">04 — Publicações</div>
+      <h2 class="section-title">Produção acadêmica</h2>
+      <div class="pub-placeholder">
+        <div class="pub-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <rect x="8" y="4" width="26" height="34" rx="3" stroke="currentColor" stroke-width="2"/>
+            <rect x="14" y="10" width="26" height="34" rx="3" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="2"/>
+            <line x1="14" y1="18" x2="26" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="14" y1="23" x2="28" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="14" y1="28" x2="24" y2="28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p>As publicações do grupo serão listadas aqui em breve.<br>Para consultar a produção bibliográfica completa, acesse o espelho do grupo no CNPq.</p>
+        <a href="https://dgp.cnpq.br/dgp/espelhogrupo/2022938988562806" target="_blank" class="btn btn-primary">Ver no CNPq →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section contato">
+    <div class="container">
+      <div class="section-label">05 — Contato</div>
+      <h2 class="section-title">Entre em contato</h2>
+      <div class="contato-grid">
+        <div class="contato-info">
+          <div class="contato-item">
+            <span class="contato-icon">✉</span>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:andreluizrj@gmail.com">andreluizrj@gmail.com</a>
+            </div>
+          </div>
+          <div class="contato-item">
+            <span class="contato-icon">☎</span>
+            <div>
+              <strong>Telefone</strong>
+              <span>(21) 2286-4258</span>
+            </div>
+          </div>
+          <div class="contato-item">
+            <span class="contato-icon">📍</span>
+            <div>
+              <strong>Endereço</strong>
+              <span>Rua Voluntários da Pátria, 107<br>Botafogo · Rio de Janeiro · RJ<br>CEP 22270-000</span>
+            </div>
+          </div>
+          <div class="contato-item">
+            <span class="contato-icon">🌐</span>
+            <div>
+              <strong>Website anterior</strong>
+              <a href="http://www.grisulunirio.com/" target="_blank">grisulunirio.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="contato-mapa-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.017!2d-43.1878995!3d-22.9527621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU3JzEwLjAiUyA0M8KwMTEnMTYuNCJX!5e0!3m2!1spt-BR!2sbr!4v1"
+            width="100%" height="300" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <svg class="logo-svg logo-svg--light" viewBox="0 0 60 60" fill="none">
+          <path d="M12 8 C14 6, 18 7, 20 9 C22 11, 21 14, 19 16 C18 17, 16 17, 15 19 C13 22, 14 26, 13 29 C12 32, 10 34, 11 37 C12 40, 15 42, 14 45 C13 48, 11 50, 12 52" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M20 9 C23 8, 27 8, 30 10 C33 12, 34 15, 32 18 C30 20, 27 20, 25 22 C23 24, 22 27, 23 30 C24 33, 27 35, 26 38 C25 40, 22 41, 21 43" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M30 10 C34 9, 38 11, 40 14 C42 17, 41 21, 38 23 C36 24, 33 24, 32 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M38 23 C40 25, 43 26, 44 29 C45 32, 43 35, 41 37 C39 39, 36 39, 34 41 C32 43, 32 46, 30 48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <circle cx="18" cy="16" r="1.5" fill="currentColor" opacity="0.6"/>
+          <circle cx="26" cy="22" r="1.5" fill="currentColor" opacity="0.6"/>
+          <circle cx="35" cy="30" r="1.5" fill="currentColor" opacity="0.6"/>
+          <circle cx="13" cy="37" r="1.5" fill="currentColor" opacity="0.6"/>
+        </svg>
+        <span>GRISUL</span>
+      </div>
+      <p class="footer-desc">Grupo de Relações Internacionais e Sul Global<br>UNIRIO · Escola de Ciência Política · Rio de Janeiro</p>
+      <p class="footer-copy">© 2025 GRISUL. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
