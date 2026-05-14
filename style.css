@@ -130,24 +130,23 @@ body {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
   text-decoration: none;
-  color: var(--verde-escuro);
 }
 
-.logo-svg {
-  width: 40px;
-  height: 40px;
-  color: var(--verde-escuro);
+.nav-logo-img {
+  height: 36px;
+  width: auto;
+  /* As logos têm fundo preto — mix-blend-mode remove o fundo preto */
+  mix-blend-mode: multiply;
 }
 
-.nav-name {
-  font-family: var(--fonte-titulo);
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: var(--verde-escuro);
-}
+/* Antes do scroll: fundo verde claro → usa logo escura (logo3) */
+.nav-logo-dark { display: block; }
+.nav-logo-light { display: none; }
+
+/* Quando scrollado: fundo branco → logo escura continua boa */
+#navbar.scrolled .nav-logo-dark { display: block; }
+#navbar.scrolled .nav-logo-light { display: none; }
 
 .nav-links {
   display: flex;
@@ -264,19 +263,37 @@ body {
   border: 1px solid rgba(27, 81, 45, 0.2);
 }
 
-.hero-title {
-  font-family: var(--fonte-titulo);
-  font-size: clamp(3.5rem, 8vw, 7rem);
-  font-weight: 700;
-  line-height: 0.95;
-  color: var(--verde-escuro);
-  letter-spacing: 0.02em;
+.hero-logo-wrap {
   margin-bottom: 2rem;
-  max-width: 700px;
 }
 
-.hero-accent {
-  color: var(--vermelho);
+.hero-logo-img {
+  /* logo1 = verde claro em fundo preto — multiply remove o preto */
+  mix-blend-mode: multiply;
+  width: min(480px, 85vw);
+  height: auto;
+}
+
+.hero-map {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(38vw, 420px);
+  opacity: 0.12;
+  pointer-events: none;
+  animation: floatMap 6s ease-in-out infinite;
+}
+
+.hero-map-img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+@keyframes floatMap {
+  0%, 100% { transform: translateY(-50%) translateX(0); }
+  50% { transform: translateY(-52%) translateX(-8px); }
 }
 
 .hero-sub {
@@ -293,24 +310,6 @@ body {
   gap: 1rem;
   flex-wrap: wrap;
 }
-
-.hero-map {
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: min(35vw, 380px);
-  opacity: 0.25;
-  pointer-events: none;
-  animation: floatMap 6s ease-in-out infinite;
-}
-
-@keyframes floatMap {
-  0%, 100% { transform: translateY(-50%) translateX(0); }
-  50% { transform: translateY(-52%) translateX(-8px); }
-}
-
-.hero-map-svg { width: 100%; height: auto; }
 
 /* ---- SOBRE ---- */
 .sobre {
@@ -644,17 +643,12 @@ body {
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  color: var(--verde-claro);
 }
 
-.logo-svg--light { color: var(--verde-claro); }
-
-.footer-logo span {
-  font-family: var(--fonte-titulo);
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+.footer-logo-img {
+  height: 80px;
+  width: auto;
+  mix-blend-mode: multiply;
 }
 
 .footer-desc {
