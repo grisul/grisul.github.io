@@ -136,8 +136,6 @@ body {
 .nav-logo-img {
   height: 36px;
   width: auto;
-  /* As logos têm fundo preto — mix-blend-mode remove o fundo preto */
-  mix-blend-mode: multiply;
 }
 
 /* Antes do scroll: fundo verde claro → usa logo escura (logo3) */
@@ -268,8 +266,6 @@ body {
 }
 
 .hero-logo-img {
-  /* logo1 = verde claro em fundo preto — multiply remove o preto */
-  mix-blend-mode: multiply;
   width: min(480px, 85vw);
   height: auto;
 }
@@ -288,7 +284,6 @@ body {
 .hero-map-img {
   width: 100%;
   height: auto;
-  mix-blend-mode: multiply;
 }
 
 @keyframes floatMap {
@@ -648,7 +643,6 @@ body {
 .footer-logo-img {
   height: 80px;
   width: auto;
-  mix-blend-mode: multiply;
 }
 
 .footer-desc {
