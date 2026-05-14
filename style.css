@@ -111,14 +111,10 @@ body {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  transition: background var(--transicao), box-shadow var(--transicao);
-  padding: 0.5rem 0;
-}
-
-#navbar.scrolled {
   background: rgba(250, 250, 247, 0.96);
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 20px rgba(27, 81, 45, 0.08);
+  padding: 0.5rem 0;
 }
 
 .nav-inner {
@@ -576,14 +572,24 @@ body {
 }
 
 .membro-info strong {
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   color: var(--verde-escuro);
 }
 
-.membro-info span {
-  font-size: 0.8rem;
-  color: #666;
+.membro-info span:first-of-type {
+  font-size: 0.82rem;
+  color: var(--verde-escuro);
+  opacity: 0.6;
+}
+
+.membro-info span:last-of-type {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--verde-escuro);
+  opacity: 0.35;
 }
 
 .membro-tag {
