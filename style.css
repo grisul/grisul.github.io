@@ -540,8 +540,26 @@ body {
 
 .membro-tag:hover { background: rgba(27, 81, 45, 0.16); }
 
-.membro-nivel {
-  font-size: 0.72rem;
+.membro-links {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.membro-links a {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--verde-escuro);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--verde-medio);
+  transition: border-color var(--transicao), color var(--transicao);
+}
+
+.membro-links a:hover {
+  color: var(--vermelho);
+  border-color: var(--vermelho);
+}
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
