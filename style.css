@@ -532,9 +532,24 @@ body {
   color: var(--verde-escuro);
   font-weight: 500;
   transition: background var(--transicao);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .membro-tag:hover { background: rgba(27, 81, 45, 0.16); }
+
+.membro-nivel {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--verde-escuro);
+  opacity: 0.45;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 
 /* ---- PUBLICAÇÕES ---- */
 .publicacoes {
