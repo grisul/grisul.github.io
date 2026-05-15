@@ -643,6 +643,13 @@ body {
   border-color: var(--verde-escuro);
 }
 
+.membro-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
 /* ---- PUBLICAÇÕES ---- */
 .publicacoes {
   background: var(--branco);
