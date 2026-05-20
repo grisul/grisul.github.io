@@ -757,6 +757,12 @@ body {
   border: 1px solid rgba(237, 155, 64, 0.3);
 }
 
+.noticia-tipo--podcast {
+  background: rgba(162, 44, 41, 0.2);
+  color: #e05c5c;
+  border: 1px solid rgba(162, 44, 41, 0.3);
+}
+
 .noticia-titulo {
   font-family: var(--fonte-titulo);
   font-size: 1.4rem;
