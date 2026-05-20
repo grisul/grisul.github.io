@@ -308,6 +308,47 @@ body {
   animation: floatMap 5s ease-in-out infinite;
 }
 
+.sobre-coord-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.sobre-coord-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.sobre-coord-foto {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  border: 2px solid var(--verde-medio);
+}
+
+.sobre-coord-nome {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--verde-escuro);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.sobre-coord-cargo {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--verde-escuro);
+  opacity: 0.5;
+  margin: 0;
+}
+
 /* ---- PÁGINAS INTERNAS ---- */
 .page-hero {
   padding-top: calc(68px + 4rem);
