@@ -11,10 +11,9 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="#inicio" class="nav-logo">
+      <a href="index.html" class="nav-logo">
         <img src="logo3.png" alt="GRISUL" class="nav-logo-img nav-logo-dark" />
         <img src="logo4.png" alt="GRISUL" class="nav-logo-img nav-logo-light" />
       </a>
@@ -22,11 +21,12 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#linhas">Linhas de Pesquisa</a></li>
-        <li><a href="#membros">Membros</a></li>
-        <li><a href="#publicacoes">Publicações</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="linhas.html">Linhas de Pesquisa</a></li>
+        <li><a href="membros.html">Membros</a></li>
+        <li><a href="publicacoes.html">Publicações</a></li>
+        <li><a href="index.html#noticias">Notícias</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
       </ul>
     </div>
   </nav>
@@ -44,7 +44,7 @@
         <p class="hero-tagline">Pesquisa crítica sobre política global, cooperação internacional e a perspectiva do Sul Global — desde a UNIRIO para o mundo.</p>
         <div class="hero-ctas">
           <a href="#sobre" class="btn btn-primary">Conheça o grupo</a>
-          <a href="#linhas" class="btn btn-outline">Linhas de pesquisa</a>
+          <a href="linhas.html" class="btn btn-outline">Linhas de pesquisa</a>
         </div>
       </div>
       <div class="hero-logo-side">
@@ -91,201 +91,46 @@
     </div>
   </section>
 
-  <!-- LINHAS DE PESQUISA -->
-  <section id="linhas" class="section linhas">
+  <!-- NOTÍCIAS -->
+  <section id="noticias" class="section noticias">
     <div class="container">
-      <div class="section-label">Linhas de Pesquisa</div>
-      <h2 class="section-title section-title--lg">O que investigamos</h2>
-      <div class="linhas-grid">
+      <div class="section-label">Notícias</div>
+      <h2 class="section-title section-title--lg">Últimas do grupo</h2>
+      <div class="noticias-grid">
 
-        <div class="linha-card" data-cor="verde">
-          <div class="linha-num">01</div>
-          <h3>Relações Internacionais da América Latina</h3>
-          <p>Estudo das relações exteriores dos países latino-americanos, integração regional e inserção internacional a partir de perspectivas críticas e decoloniais.</p>
-        </div>
+        <article class="noticia-card">
+          <div class="noticia-tipo noticia-tipo--artigo">Artigo</div>
+          <h3 class="noticia-titulo">Título da publicação ou evento aqui</h3>
+          <p class="noticia-desc">Breve descrição do conteúdo — autor, veículo ou evento onde foi apresentado.</p>
+          <div class="noticia-meta">
+            <span class="noticia-autor">Nome do Pesquisador</span>
+            <span class="noticia-data">Mai 2025</span>
+          </div>
+          <a href="#" target="_blank" class="noticia-link">Ver publicação →</a>
+        </article>
 
-        <div class="linha-card" data-cor="amarelo">
-          <div class="linha-num">02</div>
-          <h3>Atores e Agendas da Política Externa Brasileira</h3>
-          <p>Investigação sobre a formulação e implementação da política externa do Brasil, seus atores institucionais e domésticos e suas articulações internacionais.</p>
-        </div>
+        <article class="noticia-card">
+          <div class="noticia-tipo noticia-tipo--evento">Evento</div>
+          <h3 class="noticia-titulo">Título da publicação ou evento aqui</h3>
+          <p class="noticia-desc">Breve descrição do conteúdo — autor, veículo ou evento onde foi apresentado.</p>
+          <div class="noticia-meta">
+            <span class="noticia-autor">Nome do Pesquisador</span>
+            <span class="noticia-data">Mai 2025</span>
+          </div>
+          <a href="#" target="_blank" class="noticia-link">Ver publicação →</a>
+        </article>
 
-        <div class="linha-card" data-cor="verde">
-          <div class="linha-num">03</div>
-          <h3>Energia e Mudanças Climáticas no Sul Global</h3>
-          <p>Análise das dinâmicas de transição energética e dos impactos das mudanças climáticas sob a ótica dos países do Sul Global, com ênfase em justiça climática e soberania energética.</p>
-        </div>
+        <article class="noticia-card">
+          <div class="noticia-tipo noticia-tipo--artigo">Artigo</div>
+          <h3 class="noticia-titulo">Título da publicação ou evento aqui</h3>
+          <p class="noticia-desc">Breve descrição do conteúdo — autor, veículo ou evento onde foi apresentado.</p>
+          <div class="noticia-meta">
+            <span class="noticia-autor">Nome do Pesquisador</span>
+            <span class="noticia-data">Abr 2025</span>
+          </div>
+          <a href="#" target="_blank" class="noticia-link">Ver publicação →</a>
+        </article>
 
-        <div class="linha-card" data-cor="amarelo">
-          <div class="linha-num">04</div>
-          <h3>Economia Política Internacional</h3>
-          <p>Investigação das estruturas econômicas globais, fluxos de capital, comércio internacional e suas implicações para os países do Sul Global e para o desenvolvimento.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- MEMBROS -->
-  <section id="membros" class="section membros">
-    <div class="container">
-      <div class="section-label">Equipe</div>
-      <h2 class="section-title section-title--lg">Quem faz o GRISUL</h2>
-
-      <!-- COORDENADORES -->
-      <div class="membros-bloco">
-        <h3 class="membros-cat membros-cat--lg">Coordenadores</h3>
-        <div class="membros-grid">
-          <div class="membro-card membro-card--vertical">
-            <img src="foto-andre.jpg" alt="André Luiz Coelho Farias de Souza" class="membro-foto-lg" style="object-position: center 15%;" />
-            <div class="membro-info membro-info--center">
-              <strong>André Luiz Coelho Farias de Souza</strong>
-              <span>Professor Associado · Escola de Ciência Política da UNIRIO</span>
-              <span class="membro-cargo">Coordenador</span>
-              <div class="membro-links">
-                <a href="http://lattes.cnpq.br/7370207316680307" target="_blank" class="btn-lattes">Lattes</a>
-                <a href="mailto:andre.souza@unirio.br" class="btn-lattes">andre.souza@unirio.br</a>
-              </div>
-            </div>
-          </div>
-          <div class="membro-card membro-card--vertical">
-            <img src="foto-roberta.jpg" alt="Roberta Rodrigues Marques da Silva" class="membro-foto-lg" style="object-position: center 10%;" />
-            <div class="membro-info membro-info--center">
-              <strong>Roberta Rodrigues Marques da Silva</strong>
-              <span>Professora Adjunta · Escola de Ciência Política da UNIRIO</span>
-              <span class="membro-cargo">Coordenadora</span>
-              <div class="membro-links">
-                <a href="http://lattes.cnpq.br/0829888074586753" target="_blank" class="btn-lattes">Lattes</a>
-                <a href="mailto:roberta.marques@unirio.br" class="btn-lattes">roberta.marques@unirio.br</a>
-              </div>
-            </div>
-          </div>
-          <div class="membro-card membro-card--vertical">
-            <img src="foto-lucas.jpg" alt="Lucas Calabró Berti" class="membro-foto-lg" style="object-position: center 5%;" />
-            <div class="membro-info membro-info--center">
-              <strong>Lucas Calabró Berti</strong>
-              <span>Cientista Político · UNIRIO · Mestrando em Ciência Política · IESP-UERJ</span>
-              <span class="membro-cargo">Coordenador-Executivo</span>
-              <div class="membro-links">
-                <a href="http://lattes.cnpq.br/3201012395712916" target="_blank" class="btn-lattes">Lattes</a>
-                <a href="mailto:lucasberti@iesp.uerj.br" class="btn-lattes">lucasberti@iesp.uerj.br</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PESQUISADORES DOUTORES -->
-      <div class="membros-bloco">
-        <h3 class="membros-cat membros-cat--lg">Pesquisadores Doutores</h3>
-        <div class="membros-grid membros-grid--small">
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Beatriz Bandeira de Mello Souza e Silva</span>
-            <span class="membro-nivel">Doutora em Relações Internacionais · UERJ</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Edson Mendes Nunes Junior</span>
-            <span class="membro-nivel">Doutor em Ciência Política · UFF</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Fernanda Gappo Lacombe</span>
-            <span class="membro-nivel">Doutora em Literatura Comparada · UFF · Doutoranda em Ciência Política · UNIRIO</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Vinicius Silva dos Santos</span>
-            <span class="membro-nivel">Doutor em Ciência Política · UFMG</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- DOUTORANDOS E MESTRANDOS -->
-      <div class="membros-bloco">
-        <h3 class="membros-cat membros-cat--lg">Pesquisadores de Pós-Graduação</h3>
-        <div class="membros-grid membros-grid--small">
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Beatriz Carvalho Teixeira de Oliveira</span>
-            <span class="membro-nivel">Doutoranda em Ciência Política · Rutgers (EUA)</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Brena Stephany dos Santos Deodato</span>
-            <span class="membro-nivel">Mestranda em Ciência Política · UNIRIO</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Bruno Marcondes Ferreira</span>
-            <span class="membro-nivel">Mestrando em Ciência Política · UNIRIO</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Giovana Nunes Caputo de Andrade</span>
-            <span class="membro-nivel">Mestre em Ciência Política · UNIRIO</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Isabela Lima Oliveira</span>
-            <span class="membro-nivel">Mestranda em Ciência Política · UNIRIO</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Lucca Fantuzzi Soares</span>
-            <span class="membro-nivel">Doutorando em Ciência Política · UNIRIO</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Mozara de Souza Rodrigues</span>
-            <span class="membro-nivel">Doutoranda em Ciência Política · UNIRIO</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Vitor Furtado de Melo</span>
-            <span class="membro-nivel">Mestre em Ciência Política · UNIRIO</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- GRADUAÇÃO -->
-      <div class="membros-bloco">
-        <h3 class="membros-cat membros-cat--lg">Pesquisadores de Graduação</h3>
-        <div class="membros-grid membros-grid--small">
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Maria Clara Silva Santiago</span>
-            <span class="membro-nivel">Graduanda em Ciência Política · UNIRIO</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-          <div class="membro-tag">
-            <span class="membro-tag-nome">Silvia Barros de Santana Correa</span>
-            <span class="membro-nivel">Graduada em Ciência Política · UNIRIO</span>
-            <div class="membro-tag-footer"><a href="#" class="btn-lattes">Lattes</a></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- PUBLICAÇÕES -->
-  <section id="publicacoes" class="section publicacoes">
-    <div class="container">
-      <div class="section-label">Publicações</div>
-      <h2 class="section-title section-title--lg">Produção acadêmica</h2>
-      <div class="pub-placeholder">
-        <div class="pub-icon">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-            <rect x="8" y="4" width="26" height="34" rx="3" stroke="currentColor" stroke-width="2"/>
-            <rect x="14" y="10" width="26" height="34" rx="3" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="2"/>
-            <line x1="14" y1="18" x2="26" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="14" y1="23" x2="28" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="14" y1="28" x2="24" y2="28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <p>As publicações do grupo serão listadas aqui em breve.<br>Para consultar a produção bibliográfica completa, acesse o espelho do grupo no CNPq.</p>
-        <a href="https://dgp.cnpq.br/dgp/espelhogrupo/2022938988562806" target="_blank" class="btn btn-primary">Ver no CNPq →</a>
       </div>
     </div>
   </section>
@@ -320,16 +165,12 @@
           </div>
         </div>
         <div class="contato-mapa-wrap">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.017!2d-43.1878995!3d-22.9527621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU3JzEwLjAiUyA0M8KwMTEnMTYuNCJX!5e0!3m2!1spt-BR!2sbr!4v1"
-            width="100%" height="300" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy">
-          </iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.017!2d-43.1878995!3d-22.9527621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU3JzEwLjAiUyA0M8KwMTEnMTYuNCJX!5e0!3m2!1spt-BR!2sbr!4v1" width="100%" height="300" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-logo">
