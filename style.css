@@ -319,6 +319,14 @@ body {
   display: flex;
   align-items: center;
   gap: 0.7rem;
+  text-decoration: none;
+  padding: 0.3rem 0.4rem;
+  border-radius: var(--radius-sm);
+  transition: background var(--transicao);
+}
+
+.sobre-coord-item:hover {
+  background: rgba(27, 81, 45, 0.08);
 }
 
 .sobre-coord-foto {
