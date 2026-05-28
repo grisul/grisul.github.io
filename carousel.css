@@ -1,0 +1,49 @@
+/* ---- CARROSSEL DE NOTÍCIAS ---- */
+.noticias-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.noticias-nav {
+  display: flex;
+  gap: 0.75rem;
+  padding-bottom: 0.4rem;
+}
+
+.noticias-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.07);
+  color: var(--verde-claro);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.noticias-btn:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.4);
+}
+
+.noticias-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.noticias-carrossel-wrap {
+  overflow: hidden;
+}
+
+.noticias-carrossel {
+  display: grid;
+  grid-template-columns: repeat(4, calc(33.333% - 1rem));
+  gap: 1.5rem;
+  transition: transform 0.4s ease;
+}
