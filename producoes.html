@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="carousel.css" />
 </head>
 <body>
   <nav id="navbar">
@@ -34,9 +35,13 @@
     <div class="container">
       <div class="section-label">Produções</div>
       <h2 class="section-title section-title--lg">Produção acadêmica e intelectual</h2>
+      <div class="producoes-atalhos">
+        <a href="#artigos" class="producao-atalho">Artigos</a>
+        <a href="#capitulos" class="producao-atalho">Capítulos de Livro</a>
+        <a href="#midia" class="producao-atalho">Comentários na Mídia</a>
+      </div>
 
-      <!-- ARTIGOS -->
-      <div class="pub-recentes">
+      <div class="pub-recentes" id="artigos">
         <h3 class="membros-cat membros-cat--lg">Artigos</h3>
         <div class="noticias-grid">
 
@@ -54,8 +59,7 @@
         </div>
       </div>
 
-      <!-- CAPÍTULOS DE LIVRO -->
-      <div class="pub-recentes">
+      <div class="pub-recentes" id="capitulos">
         <h3 class="membros-cat membros-cat--lg">Capítulos de Livro</h3>
         <div class="noticias-grid">
 
@@ -73,8 +77,7 @@
         </div>
       </div>
 
-      <!-- COMENTÁRIOS NA MÍDIA -->
-      <div class="pub-recentes">
+      <div class="pub-recentes" id="midia">
         <h3 class="membros-cat membros-cat--lg">Comentários na Mídia</h3>
         <div class="noticias-grid">
 
