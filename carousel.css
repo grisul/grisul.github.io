@@ -42,16 +42,26 @@
 }
 
 .noticias-carrossel {
-  display: grid;
-  grid-template-columns: repeat(4, calc(33.333% - 1rem));
+  display: flex;
   gap: 1.5rem;
   transition: transform 0.4s ease;
+}
+
+.noticias-carrossel .noticia-card {
+  flex: 0 0 calc((100% - 3rem) / 3);
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .noticias-carrossel .noticia-card {
+    flex: 0 0 100%;
+  }
 }
 
 /* ---- ATALHOS DE PRODUÇÕES ---- */
 .producoes-atalhos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-bottom: 3.5rem;
 }
@@ -84,6 +94,10 @@
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--verde-escuro);
+}
+
+@media (max-width: 768px) {
+  .producoes-atalhos { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 660px) {
