@@ -1,11 +1,8 @@
 /* ---- BANNER DESTAQUE ---- */
 .destaque-banner {
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  z-index: 99;
   background: var(--verde-escuro);
-  border-top: 3px solid var(--laranja);
-  padding: 0.9rem 0;
+  border-bottom: 3px solid var(--laranja);
+  padding: 0.75rem 0;
 }
 
 .destaque-inner {
@@ -16,13 +13,13 @@
 }
 
 .destaque-emoji {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   flex-shrink: 0;
 }
 
 .destaque-texto {
   flex: 1;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--verde-claro);
   line-height: 1.4;
   min-width: 200px;
@@ -34,14 +31,15 @@
 
 .destaque-btn {
   flex-shrink: 0;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: var(--verde-escuro);
   background: var(--laranja);
   text-decoration: none;
-  padding: 0.5rem 1.2rem;
+  padding: 0.4rem 1rem;
   border-radius: 50px;
   transition: opacity 0.3s;
+  white-space: nowrap;
 }
 
 .destaque-btn:hover { opacity: 0.85; }
@@ -52,5 +50,6 @@
 }
 
 @media (max-width: 660px) {
-  .destaque-texto { font-size: 0.8rem; }
+  .destaque-texto { font-size: 0.78rem; }
+  .destaque-banner { margin-top: 68px; }
 }
